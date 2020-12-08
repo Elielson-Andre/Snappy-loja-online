@@ -1,0 +1,371 @@
+/*Zerando as margens do navegador*/
+*{              
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+html,body{
+    height:100%;
+}
+
+.clear{ clear: both;}; /*Para limpar flutuacoes do index*/
+
+.header{
+    width: 100%;
+}
+
+/*Parte superior navbar*/
+
+.header .navbar{
+    width: 100%;
+    height:70px;
+    background-color: red;
+}
+
+
+.navbar #nome{
+    float: left;
+    color:white;
+    line-height: 70px;
+    font-size: 30px;
+    font-family: tahoma;
+    margin-left: 30px;
+}
+
+
+.navbar #buscar{
+   width: 40%;
+   height: 30px;
+   margin-top: 25px;
+   border:none;
+   margin-left: 50px;
+   padding-left:10px;
+   font-size: 17px;
+   border-radius: 5px;
+}
+
+
+.navbar #btn_busca{
+    width: 80px;
+    height: 30px;
+    background-color: blue;
+    border:none;
+    color:white;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 16;
+}
+
+
+.navbar ul{
+    float: right;
+    line-height: 70px;
+    margin-right: 30px;
+}
+
+
+
+.navbar li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+
+.navbar li a{
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    transition: .3s;
+    padding-bottom: 3px;
+}
+
+
+.navbar li a:hover{
+    transition: .5s;
+    border-bottom: 2px solid white;
+}
+
+
+.header > img{
+    width: 100%;
+    margin-top: 1px;
+}
+
+
+.vitrine {
+    width: 100%;
+}
+
+
+.vitrine #titulo_vitrine{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-family: tahoma;
+    font-weight:  bold;;
+    color:red;
+}
+
+
+.vitrine .esq{
+    margin-left: 30px;
+}
+
+
+.vitrine .w1{
+    box-sizing: border-box;
+    float: left;
+    width: 300px;
+    height: 500px;
+    /*background-color: gray;*/
+    /*border: 2px solid black;*/
+    margin-top: 20px;
+    margin-right: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px gray;
+    transition: .2s;
+}
+
+
+.vitrine .w1:hover{
+    transition: .7s;
+    box-shadow: 2px 2px 100px yellow;
+}
+
+
+.vitrine .w1 #produto{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5px;
+}
+
+
+.vitrine .w1 #titulo_produto{
+   font-family: arial;
+   text-align: center;
+}
+
+
+.vitrine .w1 #descricao_produto{
+    font-family: arial;
+    text-align: center;
+}
+
+
+.vitrine .w1 #valor_produto{
+    font-family: arial;
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+ .vitrine .w1 #btn_compra{
+    width: 70%;
+    height: 35px;
+    background-color: red;
+    color:white;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    margin-top: 15%;
+}
+
+
+.footer{
+    box-sizing: border-box;
+    border: 30px solid rgba(0,0,0,0);
+    width: 100%;
+    height: 120px;
+    margin-top: 100px;
+    background-color: red;
+    
+}
+
+
+.footer p{
+    font-family: roboto,sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.footer a{
+    color:white;
+}
+
+
+.footer a:hover{
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 1350px){
+    .vitrine .w1{
+        box-sizing: border-box;
+        float: left;
+        width: 265px;
+        height: 500px;
+        margin-top: 20px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px gray;
+        transition: .2s;
+    }
+}
+
+
+@media (max-width: 1250px){
+    .vitrine .w1{
+        box-sizing: border-box;
+        float: left;
+        width: 240px;
+        height: 500px;
+        margin-top: 20px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px gray;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1230px){
+    body{
+        /*background-color: red;*/
+    }
+
+    .navbar li a{
+        font-size: 15px;
+    }
+    
+    .vitrine .w1{
+        box-sizing: border-box;
+        width: 240px;
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        
+        height: 500px;
+        margin-top: 20px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px gray;
+        transition: .2s;
+    }
+}
+
+
+@media (max-width: 972px){
+    body{
+        /*background-color: yellow;*/
+    }
+
+    .navbar #nome{
+        font-size: 20px;
+        
+    }
+
+    .navbar #buscar{
+        width: 20%;
+        height: 24px;
+        margin-top: 25px;
+        border:none;
+        margin-left: 50px;
+        padding-left:10px;
+        font-size: 15px;
+        border-radius: 5px;
+     }
+     
+     
+     .navbar #btn_busca{
+         width: 70px;
+         height: 25px;
+     }
+
+    .navbar li a{
+        font-size: 15px;
+    }
+    
+    .vitrine .w1{
+        box-sizing: border-box;
+        width: 240px;
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        
+        height: 500px;
+        margin-top: 20px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px gray;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 675px){
+    body{
+        /*background-color: green;*/
+    }
+
+    .navbar #nome{
+        font-size: 20px;
+    }
+
+    .navbar li{
+        margin-left: 1px;
+        margin-right: 5px;
+    }
+    .navbar #btn_busca{
+         width: 70px;
+         height: 25px;
+     }
+
+    .navbar li a{
+        font-size: 15px;
+    }
+    
+    .vitrine .w1{
+        box-sizing: border-box;
+        width: 240px;
+        display: inline-block;
+        position: relative;
+        left: 5%;
+        
+        height: 500px;
+        margin-top: 20px;
+        margin-right: 25px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px gray;
+        transition: .2s;
+    }
+
+}
+
+
+
+@media (max-width: 1230px){
+    body{
+        /*background-color: gray;*/
+    }
+    
+    .vitrine .esq{
+        margin-left: 0;
+    }
+}
+
+
+
+@media (max-width: 1200px){
+    .navbar ul{
+        float: right;
+        line-height: 70px;
+        margin-right: 10px;
+    }
+}
